@@ -10,6 +10,11 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true
+  },
+  colNames: {
+    type: Object,
+    required: true,
+    default: [{ messages: "messages" }]
   }
 });
 
